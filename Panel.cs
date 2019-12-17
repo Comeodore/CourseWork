@@ -46,7 +46,23 @@ namespace CourseWork
 
         private void ButtonShowIngredient_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            ShowAllIngredients showAllIngredients = new ShowAllIngredients();
+            showAllIngredients.Show();
+        }
 
+        private void ButtonEditIngredient_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EditIngredients editIngredients = new EditIngredients();
+            editIngredients.Show();
+        }
+
+        private void ButtonReturnMainMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main main = new Main();
+            main.Show();
         }
     }
 }

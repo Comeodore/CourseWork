@@ -119,7 +119,6 @@
             this.ButtonReturnToPanelAddAdmin.TabIndex = 11;
             this.ButtonReturnToPanelAddAdmin.Text = "Вернуться в панель администратора";
             this.ButtonReturnToPanelAddAdmin.UseVisualStyleBackColor = true;
-            this.ButtonReturnToPanelAddAdmin.Click += new System.EventHandler(this.ButtonReturnToPanelAddAdmin_Click_1);
             // 
             // AddAdmin
             // 

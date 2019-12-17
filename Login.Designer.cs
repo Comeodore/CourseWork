@@ -52,7 +52,6 @@
             this.label1.Size = new System.Drawing.Size(203, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Авторизация";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // pictureBox1
             // 
@@ -82,7 +81,6 @@
             this.LoginBox.Name = "LoginBox";
             this.LoginBox.Size = new System.Drawing.Size(100, 20);
             this.LoginBox.TabIndex = 3;
-            this.LoginBox.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // label2
             // 

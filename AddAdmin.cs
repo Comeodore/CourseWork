@@ -82,10 +82,5 @@ namespace CourseWork
             Panel panel = new Panel();
             panel.Show();
         }
-
-        private void ButtonReturnToPanelAddAdmin_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

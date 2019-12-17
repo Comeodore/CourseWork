@@ -40,12 +40,16 @@
             this.ButtonEditDish = new System.Windows.Forms.Button();
             this.ExitButtonPanel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ButtonDeleteAdmin = new System.Windows.Forms.Button();
+            this.ButtonReturnMainMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ButtonAddAdmin
             // 
             this.ButtonAddAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonAddAdmin.Location = new System.Drawing.Point(44, 34);
+            this.ButtonAddAdmin.Location = new System.Drawing.Point(44, 42);
             this.ButtonAddAdmin.Name = "ButtonAddAdmin";
             this.ButtonAddAdmin.Size = new System.Drawing.Size(183, 23);
             this.ButtonAddAdmin.TabIndex = 0;
@@ -56,7 +60,7 @@
             // ButtonAddIngredient
             // 
             this.ButtonAddIngredient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonAddIngredient.Location = new System.Drawing.Point(44, 60);
+            this.ButtonAddIngredient.Location = new System.Drawing.Point(44, 94);
             this.ButtonAddIngredient.Name = "ButtonAddIngredient";
             this.ButtonAddIngredient.Size = new System.Drawing.Size(183, 23);
             this.ButtonAddIngredient.TabIndex = 1;
@@ -67,7 +71,7 @@
             // ButtonShowIngredient
             // 
             this.ButtonShowIngredient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonShowIngredient.Location = new System.Drawing.Point(44, 136);
+            this.ButtonShowIngredient.Location = new System.Drawing.Point(44, 170);
             this.ButtonShowIngredient.Name = "ButtonShowIngredient";
             this.ButtonShowIngredient.Size = new System.Drawing.Size(183, 23);
             this.ButtonShowIngredient.TabIndex = 2;
@@ -78,7 +82,7 @@
             // ButtonDeleteIngredient
             // 
             this.ButtonDeleteIngredient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonDeleteIngredient.Location = new System.Drawing.Point(44, 86);
+            this.ButtonDeleteIngredient.Location = new System.Drawing.Point(44, 120);
             this.ButtonDeleteIngredient.Name = "ButtonDeleteIngredient";
             this.ButtonDeleteIngredient.Size = new System.Drawing.Size(182, 23);
             this.ButtonDeleteIngredient.TabIndex = 3;
@@ -89,7 +93,7 @@
             // ButtonAddDish
             // 
             this.ButtonAddDish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonAddDish.Location = new System.Drawing.Point(44, 162);
+            this.ButtonAddDish.Location = new System.Drawing.Point(289, 94);
             this.ButtonAddDish.Name = "ButtonAddDish";
             this.ButtonAddDish.Size = new System.Drawing.Size(182, 23);
             this.ButtonAddDish.TabIndex = 4;
@@ -99,7 +103,7 @@
             // ButtonDeleteDish
             // 
             this.ButtonDeleteDish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonDeleteDish.Location = new System.Drawing.Point(44, 189);
+            this.ButtonDeleteDish.Location = new System.Drawing.Point(289, 121);
             this.ButtonDeleteDish.Name = "ButtonDeleteDish";
             this.ButtonDeleteDish.Size = new System.Drawing.Size(182, 23);
             this.ButtonDeleteDish.TabIndex = 5;
@@ -109,7 +113,7 @@
             // ButtonShowDish
             // 
             this.ButtonShowDish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonShowDish.Location = new System.Drawing.Point(44, 242);
+            this.ButtonShowDish.Location = new System.Drawing.Point(289, 174);
             this.ButtonShowDish.Name = "ButtonShowDish";
             this.ButtonShowDish.Size = new System.Drawing.Size(181, 23);
             this.ButtonShowDish.TabIndex = 6;
@@ -119,17 +123,18 @@
             // ButtonEditIngredient
             // 
             this.ButtonEditIngredient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEditIngredient.Location = new System.Drawing.Point(57, 111);
+            this.ButtonEditIngredient.Location = new System.Drawing.Point(57, 145);
             this.ButtonEditIngredient.Name = "ButtonEditIngredient";
             this.ButtonEditIngredient.Size = new System.Drawing.Size(156, 23);
             this.ButtonEditIngredient.TabIndex = 7;
             this.ButtonEditIngredient.Text = "Редактировать ингридиент";
             this.ButtonEditIngredient.UseVisualStyleBackColor = true;
+            this.ButtonEditIngredient.Click += new System.EventHandler(this.ButtonEditIngredient_Click);
             // 
             // ButtonEditDish
             // 
             this.ButtonEditDish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEditDish.Location = new System.Drawing.Point(62, 216);
+            this.ButtonEditDish.Location = new System.Drawing.Point(307, 148);
             this.ButtonEditDish.Name = "ButtonEditDish";
             this.ButtonEditDish.Size = new System.Drawing.Size(151, 23);
             this.ButtonEditDish.TabIndex = 8;
@@ -142,7 +147,7 @@
             this.ExitButtonPanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitButtonPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ExitButtonPanel.ForeColor = System.Drawing.Color.White;
-            this.ExitButtonPanel.Location = new System.Drawing.Point(247, -2);
+            this.ExitButtonPanel.Location = new System.Drawing.Point(501, -2);
             this.ExitButtonPanel.Name = "ExitButtonPanel";
             this.ExitButtonPanel.Size = new System.Drawing.Size(27, 25);
             this.ExitButtonPanel.TabIndex = 9;
@@ -154,18 +159,63 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(39, 9);
+            this.label1.Location = new System.Drawing.Point(170, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(191, 16);
             this.label1.TabIndex = 10;
             this.label1.Text = "Панель администратора";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(79, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 16);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Ингридиенты";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(352, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 16);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Блюда";
+            // 
+            // ButtonDeleteAdmin
+            // 
+            this.ButtonDeleteAdmin.Location = new System.Drawing.Point(289, 42);
+            this.ButtonDeleteAdmin.Name = "ButtonDeleteAdmin";
+            this.ButtonDeleteAdmin.Size = new System.Drawing.Size(181, 23);
+            this.ButtonDeleteAdmin.TabIndex = 13;
+            this.ButtonDeleteAdmin.Text = "Удаление администратора";
+            this.ButtonDeleteAdmin.UseVisualStyleBackColor = true;
+            // 
+            // ButtonReturnMainMenu
+            // 
+            this.ButtonReturnMainMenu.Location = new System.Drawing.Point(168, 206);
+            this.ButtonReturnMainMenu.Name = "ButtonReturnMainMenu";
+            this.ButtonReturnMainMenu.Size = new System.Drawing.Size(189, 23);
+            this.ButtonReturnMainMenu.TabIndex = 14;
+            this.ButtonReturnMainMenu.Text = "Вернутся в главное меню";
+            this.ButtonReturnMainMenu.UseVisualStyleBackColor = true;
+            this.ButtonReturnMainMenu.Click += new System.EventHandler(this.ButtonReturnMainMenu_Click);
             // 
             // Panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(272, 277);
+            this.ClientSize = new System.Drawing.Size(523, 239);
+            this.Controls.Add(this.ButtonReturnMainMenu);
+            this.Controls.Add(this.ButtonDeleteAdmin);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ExitButtonPanel);
             this.Controls.Add(this.ButtonEditDish);
@@ -200,5 +250,9 @@
         private System.Windows.Forms.Button ButtonEditDish;
         private System.Windows.Forms.Label ExitButtonPanel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button ButtonDeleteAdmin;
+        private System.Windows.Forms.Button ButtonReturnMainMenu;
     }
 }

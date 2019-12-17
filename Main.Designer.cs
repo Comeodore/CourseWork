@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.label1 = new System.Windows.Forms.Label();
             this.ButtonShowMenu = new System.Windows.Forms.Button();
-            this.ButtonSortMenu = new System.Windows.Forms.Button();
             this.ButtonLoginAdm = new System.Windows.Forms.Button();
             this.ExitButtonMain = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -57,20 +56,10 @@
             this.ButtonShowMenu.Text = "Просмотреть меню ресторана";
             this.ButtonShowMenu.UseVisualStyleBackColor = true;
             // 
-            // ButtonSortMenu
-            // 
-            this.ButtonSortMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonSortMenu.Location = new System.Drawing.Point(135, 87);
-            this.ButtonSortMenu.Name = "ButtonSortMenu";
-            this.ButtonSortMenu.Size = new System.Drawing.Size(199, 23);
-            this.ButtonSortMenu.TabIndex = 2;
-            this.ButtonSortMenu.Text = "Отсортировать меню";
-            this.ButtonSortMenu.UseVisualStyleBackColor = true;
-            // 
             // ButtonLoginAdm
             // 
             this.ButtonLoginAdm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonLoginAdm.Location = new System.Drawing.Point(135, 115);
+            this.ButtonLoginAdm.Location = new System.Drawing.Point(135, 87);
             this.ButtonLoginAdm.Name = "ButtonLoginAdm";
             this.ButtonLoginAdm.Size = new System.Drawing.Size(199, 23);
             this.ButtonLoginAdm.TabIndex = 3;
@@ -96,10 +85,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(482, 155);
+            this.ClientSize = new System.Drawing.Size(482, 121);
             this.Controls.Add(this.ExitButtonMain);
             this.Controls.Add(this.ButtonLoginAdm);
-            this.Controls.Add(this.ButtonSortMenu);
             this.Controls.Add(this.ButtonShowMenu);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -116,7 +104,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ButtonShowMenu;
-        private System.Windows.Forms.Button ButtonSortMenu;
         private System.Windows.Forms.Button ButtonLoginAdm;
         private System.Windows.Forms.Label ExitButtonMain;
     }
