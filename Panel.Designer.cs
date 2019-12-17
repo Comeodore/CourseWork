@@ -189,6 +189,7 @@
             // 
             // ButtonDeleteAdmin
             // 
+            this.ButtonDeleteAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonDeleteAdmin.Location = new System.Drawing.Point(289, 42);
             this.ButtonDeleteAdmin.Name = "ButtonDeleteAdmin";
             this.ButtonDeleteAdmin.Size = new System.Drawing.Size(181, 23);
@@ -198,6 +199,7 @@
             // 
             // ButtonReturnMainMenu
             // 
+            this.ButtonReturnMainMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonReturnMainMenu.Location = new System.Drawing.Point(168, 206);
             this.ButtonReturnMainMenu.Name = "ButtonReturnMainMenu";
             this.ButtonReturnMainMenu.Size = new System.Drawing.Size(189, 23);

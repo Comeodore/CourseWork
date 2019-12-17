@@ -69,6 +69,7 @@
             // 
             // ReturnPanelShowAllIngredients
             // 
+            this.ReturnPanelShowAllIngredients.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ReturnPanelShowAllIngredients.Location = new System.Drawing.Point(41, 337);
             this.ReturnPanelShowAllIngredients.Name = "ReturnPanelShowAllIngredients";
             this.ReturnPanelShowAllIngredients.Size = new System.Drawing.Size(213, 23);

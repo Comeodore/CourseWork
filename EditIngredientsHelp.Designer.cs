@@ -89,6 +89,7 @@
             // 
             // EditIngredientsButtonChangesDone
             // 
+            this.EditIngredientsButtonChangesDone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EditIngredientsButtonChangesDone.Location = new System.Drawing.Point(104, 91);
             this.EditIngredientsButtonChangesDone.Name = "EditIngredientsButtonChangesDone";
             this.EditIngredientsButtonChangesDone.Size = new System.Drawing.Size(113, 23);
@@ -99,6 +100,7 @@
             // 
             // ReturnPanelEditIngredients
             // 
+            this.ReturnPanelEditIngredients.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ReturnPanelEditIngredients.Location = new System.Drawing.Point(58, 120);
             this.ReturnPanelEditIngredients.Name = "ReturnPanelEditIngredients";
             this.ReturnPanelEditIngredients.Size = new System.Drawing.Size(213, 23);

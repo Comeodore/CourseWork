@@ -41,3 +41,6 @@ C:\Users\Владимир\Source\Repos\Comeodore\CourseWork\obj\Debug\CourseWork
 C:\Users\Владимир\Source\Repos\Comeodore\CourseWork\obj\Debug\CourseWork.exe
 C:\Users\Владимир\Source\Repos\Comeodore\CourseWork\obj\Debug\CourseWork.pdb
 C:\Users\Владимир\Source\Repos\Comeodore\CourseWork\obj\Debug\CourseWork.ShowAllIngredients.resources
+C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.EditIngredients.resources
+C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.EditIngredientsHelp.resources
+C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.ShowAllIngredients.resources

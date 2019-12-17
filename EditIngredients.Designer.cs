@@ -63,6 +63,7 @@
             // 
             // ButtonChoseEditIngredientsName
             // 
+            this.ButtonChoseEditIngredientsName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonChoseEditIngredientsName.Location = new System.Drawing.Point(34, 41);
             this.ButtonChoseEditIngredientsName.Name = "ButtonChoseEditIngredientsName";
             this.ButtonChoseEditIngredientsName.Size = new System.Drawing.Size(75, 23);
@@ -73,6 +74,7 @@
             // 
             // ButtonChoseEditIngredientsWeight
             // 
+            this.ButtonChoseEditIngredientsWeight.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonChoseEditIngredientsWeight.Location = new System.Drawing.Point(131, 41);
             this.ButtonChoseEditIngredientsWeight.Name = "ButtonChoseEditIngredientsWeight";
             this.ButtonChoseEditIngredientsWeight.Size = new System.Drawing.Size(75, 23);
@@ -83,6 +85,7 @@
             // 
             // ButtonChoseEditIngredientsPrice
             // 
+            this.ButtonChoseEditIngredientsPrice.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonChoseEditIngredientsPrice.Location = new System.Drawing.Point(225, 41);
             this.ButtonChoseEditIngredientsPrice.Name = "ButtonChoseEditIngredientsPrice";
             this.ButtonChoseEditIngredientsPrice.Size = new System.Drawing.Size(75, 23);
@@ -93,6 +96,7 @@
             // 
             // ReturnPanelEditIngredients
             // 
+            this.ReturnPanelEditIngredients.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ReturnPanelEditIngredients.Location = new System.Drawing.Point(59, 71);
             this.ReturnPanelEditIngredients.Name = "ReturnPanelEditIngredients";
             this.ReturnPanelEditIngredients.Size = new System.Drawing.Size(213, 23);
