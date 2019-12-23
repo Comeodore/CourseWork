@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.ExitButtonLogin = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BackButton = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -123,10 +124,13 @@
             this.ExitButtonLogin.TabIndex = 1;
             this.ExitButtonLogin.Text = "X";
             this.ExitButtonLogin.Click += new System.EventHandler(this.ExitButtonLogin_Click);
+            this.ExitButtonLogin.MouseEnter += new System.EventHandler(this.ExitButton_MouseEnter);
+            this.ExitButtonLogin.MouseLeave += new System.EventHandler(this.ExitButton_MouseLeave);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(27)))), ((int)(((byte)(21)))));
+            this.panel1.Controls.Add(this.BackButton);
             this.panel1.Controls.Add(this.ExitButtonLogin);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.PasswordBox);
@@ -140,6 +144,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(321, 383);
             this.panel1.TabIndex = 0;
+            // 
+            // BackButton
+            // 
+            this.BackButton.AutoSize = true;
+            this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackButton.Location = new System.Drawing.Point(-3, -4);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(34, 25);
+            this.BackButton.TabIndex = 7;
+            this.BackButton.Text = "←";
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            this.BackButton.MouseEnter += new System.EventHandler(this.BackButton_MouseEnter);
+            this.BackButton.MouseLeave += new System.EventHandler(this.BackButton_MouseLeave);
             // 
             // Login
             // 
@@ -170,5 +188,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label ExitButtonLogin;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label BackButton;
     }
 }

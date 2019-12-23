@@ -55,6 +55,7 @@
             this.ButtonShowMenu.TabIndex = 1;
             this.ButtonShowMenu.Text = "Просмотреть меню ресторана";
             this.ButtonShowMenu.UseVisualStyleBackColor = true;
+            this.ButtonShowMenu.Click += new System.EventHandler(this.ButtonShowMenu_Click);
             // 
             // ButtonLoginAdm
             // 
@@ -79,13 +80,15 @@
             this.ExitButtonMain.TabIndex = 4;
             this.ExitButtonMain.Text = "X";
             this.ExitButtonMain.Click += new System.EventHandler(this.ExitButtonMain_Click);
+            this.ExitButtonMain.MouseEnter += new System.EventHandler(this.ExitButton_MouseEnter);
+            this.ExitButtonMain.MouseLeave += new System.EventHandler(this.ExitButton_MouseLeave);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(482, 121);
+            this.ClientSize = new System.Drawing.Size(482, 128);
             this.Controls.Add(this.ExitButtonMain);
             this.Controls.Add(this.ButtonLoginAdm);
             this.Controls.Add(this.ButtonShowMenu);

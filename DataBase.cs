@@ -9,7 +9,7 @@ namespace CourseWork
 {
     class DataBase
     {
-        MySqlConnection connection = new MySqlConnection("Server=127.0.0.1;Database=courseworkuser;Uid=root;Pwd=''");
+        MySqlConnection connection = new MySqlConnection("Server=127.0.0.1;Database=coursework;Uid=root;Pwd=''");
         public void openConnection()
         {
             if (connection.State == System.Data.ConnectionState.Closed)

@@ -82,5 +82,16 @@ namespace CourseWork
             Panel panel = new Panel();
             panel.Show();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Panel panel = new Panel();
+            panel.Show();
+        }
+        private void ExitButton_MouseEnter(object sender, EventArgs e) => ExitButtonAddAdmin.ForeColor = Color.Red;
+        private void ExitButton_MouseLeave(object sender, EventArgs e) => ExitButtonAddAdmin.ForeColor = Color.White;
+        private void BackButton_MouseEnter(object sender, EventArgs e) => BackButton.ForeColor = Color.Red;
+        private void BackButton_MouseLeave(object sender, EventArgs e) => BackButton.ForeColor = Color.White;
     }
 }

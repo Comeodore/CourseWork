@@ -17,6 +17,10 @@ namespace CourseWork
             InitializeComponent();
         }
 
+        private void ExitButton_MouseEnter(object sender, EventArgs e) => ExitButtonPanel.ForeColor = Color.Red;
+        private void ExitButton_MouseLeave(object sender, EventArgs e) => ExitButtonPanel.ForeColor = Color.White;
+        private void BackButton_MouseEnter(object sender, EventArgs e) => BackButton.ForeColor = Color.Red;
+        private void BackButton_MouseLeave(object sender, EventArgs e) => BackButton.ForeColor = Color.White;
 
         private void ExitButtonPanel_Click(object sender, EventArgs e)
         {
@@ -63,6 +67,48 @@ namespace CourseWork
             this.Hide();
             Main main = new Main();
             main.Show();
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void ButtonAddDish_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddDish addDish = new AddDish();
+            addDish.Show();
+        }
+
+        private void ButtonDeleteAdmin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DeleteAdmin deleteAdmin = new DeleteAdmin();
+            deleteAdmin.Show();
+        }
+
+        private void ButtonDeleteDish_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DeleteDish deleteDish = new DeleteDish();
+            deleteDish.Show();
+        }
+
+        private void ButtonEditDish_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EditDish editDish = new EditDish();
+            editDish.Show();
+        }
+
+        private void ButtonShowDish_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ShowAllDish showAllDish = new ShowAllDish();
+            showAllDish.Show();
         }
     }
 }

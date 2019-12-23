@@ -43,7 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.ButtonDeleteAdmin = new System.Windows.Forms.Button();
-            this.ButtonReturnMainMenu = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ButtonAddAdmin
@@ -71,7 +71,7 @@
             // ButtonShowIngredient
             // 
             this.ButtonShowIngredient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonShowIngredient.Location = new System.Drawing.Point(44, 170);
+            this.ButtonShowIngredient.Location = new System.Drawing.Point(44, 169);
             this.ButtonShowIngredient.Name = "ButtonShowIngredient";
             this.ButtonShowIngredient.Size = new System.Drawing.Size(183, 23);
             this.ButtonShowIngredient.TabIndex = 2;
@@ -84,7 +84,7 @@
             this.ButtonDeleteIngredient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonDeleteIngredient.Location = new System.Drawing.Point(44, 120);
             this.ButtonDeleteIngredient.Name = "ButtonDeleteIngredient";
-            this.ButtonDeleteIngredient.Size = new System.Drawing.Size(182, 23);
+            this.ButtonDeleteIngredient.Size = new System.Drawing.Size(183, 23);
             this.ButtonDeleteIngredient.TabIndex = 3;
             this.ButtonDeleteIngredient.Text = "Удалить ингридиент";
             this.ButtonDeleteIngredient.UseVisualStyleBackColor = true;
@@ -93,39 +93,42 @@
             // ButtonAddDish
             // 
             this.ButtonAddDish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonAddDish.Location = new System.Drawing.Point(289, 94);
+            this.ButtonAddDish.Location = new System.Drawing.Point(288, 94);
             this.ButtonAddDish.Name = "ButtonAddDish";
             this.ButtonAddDish.Size = new System.Drawing.Size(182, 23);
             this.ButtonAddDish.TabIndex = 4;
             this.ButtonAddDish.Text = "Добавить блюдо";
             this.ButtonAddDish.UseVisualStyleBackColor = true;
+            this.ButtonAddDish.Click += new System.EventHandler(this.ButtonAddDish_Click);
             // 
             // ButtonDeleteDish
             // 
             this.ButtonDeleteDish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonDeleteDish.Location = new System.Drawing.Point(289, 121);
+            this.ButtonDeleteDish.Location = new System.Drawing.Point(289, 120);
             this.ButtonDeleteDish.Name = "ButtonDeleteDish";
-            this.ButtonDeleteDish.Size = new System.Drawing.Size(182, 23);
+            this.ButtonDeleteDish.Size = new System.Drawing.Size(181, 23);
             this.ButtonDeleteDish.TabIndex = 5;
             this.ButtonDeleteDish.Text = "Удалить блюдо";
             this.ButtonDeleteDish.UseVisualStyleBackColor = true;
+            this.ButtonDeleteDish.Click += new System.EventHandler(this.ButtonDeleteDish_Click);
             // 
             // ButtonShowDish
             // 
             this.ButtonShowDish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonShowDish.Location = new System.Drawing.Point(289, 174);
+            this.ButtonShowDish.Location = new System.Drawing.Point(289, 171);
             this.ButtonShowDish.Name = "ButtonShowDish";
-            this.ButtonShowDish.Size = new System.Drawing.Size(181, 23);
+            this.ButtonShowDish.Size = new System.Drawing.Size(181, 21);
             this.ButtonShowDish.TabIndex = 6;
             this.ButtonShowDish.Text = "Посмотреть список блюд";
             this.ButtonShowDish.UseVisualStyleBackColor = true;
+            this.ButtonShowDish.Click += new System.EventHandler(this.ButtonShowDish_Click);
             // 
             // ButtonEditIngredient
             // 
             this.ButtonEditIngredient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEditIngredient.Location = new System.Drawing.Point(57, 145);
+            this.ButtonEditIngredient.Location = new System.Drawing.Point(44, 145);
             this.ButtonEditIngredient.Name = "ButtonEditIngredient";
-            this.ButtonEditIngredient.Size = new System.Drawing.Size(156, 23);
+            this.ButtonEditIngredient.Size = new System.Drawing.Size(183, 23);
             this.ButtonEditIngredient.TabIndex = 7;
             this.ButtonEditIngredient.Text = "Редактировать ингридиент";
             this.ButtonEditIngredient.UseVisualStyleBackColor = true;
@@ -134,12 +137,13 @@
             // ButtonEditDish
             // 
             this.ButtonEditDish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEditDish.Location = new System.Drawing.Point(307, 148);
+            this.ButtonEditDish.Location = new System.Drawing.Point(289, 145);
             this.ButtonEditDish.Name = "ButtonEditDish";
-            this.ButtonEditDish.Size = new System.Drawing.Size(151, 23);
+            this.ButtonEditDish.Size = new System.Drawing.Size(181, 23);
             this.ButtonEditDish.TabIndex = 8;
             this.ButtonEditDish.Text = "Редактировать блюдо";
             this.ButtonEditDish.UseVisualStyleBackColor = true;
+            this.ButtonEditDish.Click += new System.EventHandler(this.ButtonEditDish_Click);
             // 
             // ExitButtonPanel
             // 
@@ -153,6 +157,8 @@
             this.ExitButtonPanel.TabIndex = 9;
             this.ExitButtonPanel.Text = "X";
             this.ExitButtonPanel.Click += new System.EventHandler(this.ExitButtonPanel_Click);
+            this.ExitButtonPanel.MouseEnter += new System.EventHandler(this.ExitButton_MouseEnter);
+            this.ExitButtonPanel.MouseLeave += new System.EventHandler(this.ExitButton_MouseLeave);
             // 
             // label1
             // 
@@ -196,25 +202,30 @@
             this.ButtonDeleteAdmin.TabIndex = 13;
             this.ButtonDeleteAdmin.Text = "Удаление администратора";
             this.ButtonDeleteAdmin.UseVisualStyleBackColor = true;
+            this.ButtonDeleteAdmin.Click += new System.EventHandler(this.ButtonDeleteAdmin_Click);
             // 
-            // ButtonReturnMainMenu
+            // BackButton
             // 
-            this.ButtonReturnMainMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonReturnMainMenu.Location = new System.Drawing.Point(168, 206);
-            this.ButtonReturnMainMenu.Name = "ButtonReturnMainMenu";
-            this.ButtonReturnMainMenu.Size = new System.Drawing.Size(189, 23);
-            this.ButtonReturnMainMenu.TabIndex = 14;
-            this.ButtonReturnMainMenu.Text = "Вернутся в главное меню";
-            this.ButtonReturnMainMenu.UseVisualStyleBackColor = true;
-            this.ButtonReturnMainMenu.Click += new System.EventHandler(this.ButtonReturnMainMenu_Click);
+            this.BackButton.AutoSize = true;
+            this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.BackButton.Location = new System.Drawing.Point(0, -3);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(34, 25);
+            this.BackButton.TabIndex = 14;
+            this.BackButton.Text = "←";
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            this.BackButton.MouseEnter += new System.EventHandler(this.BackButton_MouseEnter);
+            this.BackButton.MouseLeave += new System.EventHandler(this.BackButton_MouseLeave);
             // 
             // Panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(523, 239);
-            this.Controls.Add(this.ButtonReturnMainMenu);
+            this.ClientSize = new System.Drawing.Size(523, 214);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ButtonDeleteAdmin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -255,6 +266,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button ButtonDeleteAdmin;
-        private System.Windows.Forms.Button ButtonReturnMainMenu;
+        private System.Windows.Forms.Label BackButton;
     }
 }

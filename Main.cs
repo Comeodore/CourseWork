@@ -28,5 +28,14 @@ namespace CourseWork
             Login login = new Login();
             login.Show();
         }
+        private void ExitButton_MouseEnter(object sender, EventArgs e) => ExitButtonMain.ForeColor = Color.Red;
+        private void ExitButton_MouseLeave(object sender, EventArgs e) => ExitButtonMain.ForeColor = Color.White;
+
+        private void ButtonShowMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
     }
 }

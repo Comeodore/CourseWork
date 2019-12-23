@@ -22,14 +22,6 @@ namespace CourseWork
         {
             Application.Exit();
         }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Panel panel = new Panel();
-            panel.Show();
-        }
-
         private void AddIngredientButton_Click(object sender, EventArgs e)
         {
             if (CheckNameBoxForFill() || CheckWeightForFill() || CheckPriceForFill() || CheckNameIngredientForRepeat()) return;
@@ -37,7 +29,7 @@ namespace CourseWork
             DataBase AddIngredients = new DataBase();
             MySqlCommand command = new MySqlCommand("INSERT INTO `ingredients` (`name`, `weight`, `price`) VALUES (@AddIngredientName, @AddIngredientWeight, @AddIngredientPrice)", AddIngredients.connectionStatus());
 
-            command.Parameters.Add("@AddIngredientName", MySqlDbType.VarChar).Value = AddIngredientNameBox.Text;
+            command.Parameters.Add("@AddIngredientName", MySqlDbType.VarChar).Value = AddIngredientNameBox.Text.ToLower();
             command.Parameters.Add("@AddIngredientWeight", MySqlDbType.Float).Value = AddIngredientWeightBox.Text;
             command.Parameters.Add("@AddIngredientPrice", MySqlDbType.Float).Value = AddIngredientPriceBox.Text;
 
@@ -92,5 +84,15 @@ namespace CourseWork
             }
             else return false;
         }
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Panel panel = new Panel();
+            panel.Show();
+        }
+        private void ExitButton_MouseEnter(object sender, EventArgs e) => ExitButtonAddIngredients.ForeColor = Color.Red;
+        private void ExitButton_MouseLeave(object sender, EventArgs e) => ExitButtonAddIngredients.ForeColor = Color.White;
+        private void BackButton_MouseEnter(object sender, EventArgs e) => BackButton.ForeColor = Color.Red;
+        private void BackButton_MouseLeave(object sender, EventArgs e) => BackButton.ForeColor = Color.White;
     }
 }

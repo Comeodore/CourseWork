@@ -36,7 +36,7 @@
             this.PasswordAddAdminBox = new System.Windows.Forms.TextBox();
             this.ButtonRegisterAddAdmin = new System.Windows.Forms.Button();
             this.ExitButtonAddAdmin = new System.Windows.Forms.Label();
-            this.ButtonReturnToPanelAddAdmin = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -44,7 +44,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(3, 15);
+            this.label1.Location = new System.Drawing.Point(26, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(390, 32);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(97, 63);
+            this.label2.Location = new System.Drawing.Point(120, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 26);
             this.label2.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(84, 102);
+            this.label3.Location = new System.Drawing.Point(107, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 26);
             this.label3.TabIndex = 2;
@@ -72,14 +72,14 @@
             // 
             // LoginAddAdminBox
             // 
-            this.LoginAddAdminBox.Location = new System.Drawing.Point(191, 69);
+            this.LoginAddAdminBox.Location = new System.Drawing.Point(214, 65);
             this.LoginAddAdminBox.Name = "LoginAddAdminBox";
             this.LoginAddAdminBox.Size = new System.Drawing.Size(100, 20);
             this.LoginAddAdminBox.TabIndex = 3;
             // 
             // PasswordAddAdminBox
             // 
-            this.PasswordAddAdminBox.Location = new System.Drawing.Point(191, 108);
+            this.PasswordAddAdminBox.Location = new System.Drawing.Point(214, 104);
             this.PasswordAddAdminBox.Name = "PasswordAddAdminBox";
             this.PasswordAddAdminBox.Size = new System.Drawing.Size(100, 20);
             this.PasswordAddAdminBox.TabIndex = 4;
@@ -89,7 +89,7 @@
             this.ButtonRegisterAddAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonRegisterAddAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ButtonRegisterAddAdmin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonRegisterAddAdmin.Location = new System.Drawing.Point(120, 143);
+            this.ButtonRegisterAddAdmin.Location = new System.Drawing.Point(143, 139);
             this.ButtonRegisterAddAdmin.Name = "ButtonRegisterAddAdmin";
             this.ButtonRegisterAddAdmin.Size = new System.Drawing.Size(153, 23);
             this.ButtonRegisterAddAdmin.TabIndex = 5;
@@ -103,30 +103,37 @@
             this.ExitButtonAddAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitButtonAddAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ExitButtonAddAdmin.ForeColor = System.Drawing.Color.White;
-            this.ExitButtonAddAdmin.Location = new System.Drawing.Point(366, -2);
+            this.ExitButtonAddAdmin.Location = new System.Drawing.Point(417, -2);
             this.ExitButtonAddAdmin.Name = "ExitButtonAddAdmin";
             this.ExitButtonAddAdmin.Size = new System.Drawing.Size(27, 25);
             this.ExitButtonAddAdmin.TabIndex = 10;
             this.ExitButtonAddAdmin.Text = "X";
             this.ExitButtonAddAdmin.Click += new System.EventHandler(this.ExitButtonAddAdmin_Click);
+            this.ExitButtonAddAdmin.MouseEnter += new System.EventHandler(this.ExitButton_MouseEnter);
+            this.ExitButtonAddAdmin.MouseLeave += new System.EventHandler(this.ExitButton_MouseLeave);
             // 
-            // ButtonReturnToPanelAddAdmin
+            // BackButton
             // 
-            this.ButtonReturnToPanelAddAdmin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonReturnToPanelAddAdmin.Location = new System.Drawing.Point(92, 175);
-            this.ButtonReturnToPanelAddAdmin.Name = "ButtonReturnToPanelAddAdmin";
-            this.ButtonReturnToPanelAddAdmin.Size = new System.Drawing.Size(207, 23);
-            this.ButtonReturnToPanelAddAdmin.TabIndex = 11;
-            this.ButtonReturnToPanelAddAdmin.Text = "Вернуться в панель администратора";
-            this.ButtonReturnToPanelAddAdmin.UseVisualStyleBackColor = true;
+            this.BackButton.AutoSize = true;
+            this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.BackButton.Location = new System.Drawing.Point(-2, -5);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(34, 25);
+            this.BackButton.TabIndex = 15;
+            this.BackButton.Text = "←";
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            this.BackButton.MouseEnter += new System.EventHandler(this.BackButton_MouseEnter);
+            this.BackButton.MouseLeave += new System.EventHandler(this.BackButton_MouseLeave);
             // 
             // AddAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(388, 218);
-            this.Controls.Add(this.ButtonReturnToPanelAddAdmin);
+            this.ClientSize = new System.Drawing.Size(439, 177);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ExitButtonAddAdmin);
             this.Controls.Add(this.ButtonRegisterAddAdmin);
             this.Controls.Add(this.label1);
@@ -154,6 +161,6 @@
         private System.Windows.Forms.TextBox PasswordAddAdminBox;
         private System.Windows.Forms.Button ButtonRegisterAddAdmin;
         private System.Windows.Forms.Label ExitButtonAddAdmin;
-        private System.Windows.Forms.Button ButtonReturnToPanelAddAdmin;
+        private System.Windows.Forms.Label BackButton;
     }
 }

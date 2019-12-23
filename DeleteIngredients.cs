@@ -17,14 +17,6 @@ namespace CourseWork
         {
             InitializeComponent();
         }
-
-        private void ButtonReturnToPanelDeleteIngredients_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Panel panel = new Panel();
-            panel.Show();
-        }
-
         private void DeleteIngredientsButton_Click(object sender, EventArgs e)
         {
             if (CheckDeleteIngredientNameBoxForFill() || CheckDeleteNameIngredientForEmpty()) return;
@@ -48,7 +40,6 @@ namespace CourseWork
             }
             else return false;
         }
-
         public Boolean CheckDeleteNameIngredientForEmpty()
         {
             DataBase DeleteIngredient = new DataBase();
@@ -68,10 +59,20 @@ namespace CourseWork
             }
             else return false;
         }
-
         private void ExitButtonDeleteIngredients_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Panel panel = new Panel();
+            panel.Show();
+        }
+        private void ExitButton_MouseEnter(object sender, EventArgs e) => ExitButtonDeleteIngredients.ForeColor = Color.Red;
+        private void ExitButton_MouseLeave(object sender, EventArgs e) => ExitButtonDeleteIngredients.ForeColor = Color.White;
+        private void BackButton_MouseEnter(object sender, EventArgs e) => BackButton.ForeColor = Color.Red;
+        private void BackButton_MouseLeave(object sender, EventArgs e) => BackButton.ForeColor = Color.White;
     }
 }

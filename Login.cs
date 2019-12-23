@@ -31,7 +31,7 @@ namespace CourseWork
             command.Parameters.Add("@userlogin", MySqlDbType.VarChar).Value = loginUser;
             command.Parameters.Add("@userpassword", MySqlDbType.VarChar).Value = passwordUser;
 
-            adapter.SelectCommand = command; // выполнение команды выборки елементов с БД
+            adapter.SelectCommand = command; // присвоение адаптеру команды MySQL
             adapter.Fill(table); // заполнение считанных данных в табличку
 
             if (table.Rows.Count > 0)
@@ -46,6 +46,16 @@ namespace CourseWork
         private void ExitButtonLogin_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void ExitButton_MouseEnter(object sender, EventArgs e) => ExitButtonLogin.ForeColor = Color.Red;
+        private void ExitButton_MouseLeave(object sender, EventArgs e) => ExitButtonLogin.ForeColor = Color.White;
+        private void BackButton_MouseEnter(object sender, EventArgs e) => BackButton.ForeColor = Color.Red;
+        private void BackButton_MouseLeave(object sender, EventArgs e) => BackButton.ForeColor = Color.White;
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main main = new Main();
+            main.Show();
         }
     }
 }

@@ -42,5 +42,10 @@ C:\Users\Владимир\Source\Repos\Comeodore\CourseWork\obj\Debug\CourseWork
 C:\Users\Владимир\Source\Repos\Comeodore\CourseWork\obj\Debug\CourseWork.pdb
 C:\Users\Владимир\Source\Repos\Comeodore\CourseWork\obj\Debug\CourseWork.ShowAllIngredients.resources
 C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.EditIngredients.resources
-C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.EditIngredientsHelp.resources
 C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.ShowAllIngredients.resources
+C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.AddDish.resources
+C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.DeleteAdmin.resources
+C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.DeleteDish.resources
+C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.EditDish.resources
+C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.ShowAllDish.resources
+C:\Users\Владимир\source\repos\CourseWork\obj\Debug\CourseWork.Menu.resources
