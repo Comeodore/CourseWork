@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditDish));
             this.BackButton = new System.Windows.Forms.Label();
             this.radioButtonPrice = new System.Windows.Forms.RadioButton();
             this.radioButtonWeight = new System.Windows.Forms.RadioButton();
@@ -196,6 +197,7 @@
             this.Controls.Add(this.textBoxOld);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditDish";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditDish";

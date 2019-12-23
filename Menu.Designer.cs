@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.BackButton = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Label();
             this.dataGridViewIngredients = new System.Windows.Forms.DataGridView();
@@ -115,6 +116,7 @@
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.dataGridViewIngredients);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";

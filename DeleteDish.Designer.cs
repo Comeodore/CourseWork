@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeleteDish));
             this.BackButton = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -104,6 +105,7 @@
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ExitButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeleteDish";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeleteDish";
